@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<body>
+<head>
+  <meta charset="UTF-8">
+  <h1>Bem vindo ao Currículo de Marcelo Marcos</h1>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header></header>
+  <nav>
+    <ul>
+      <li><a href="sobremim.html">Sobre Mim</a></li>
+      <li><a href="formacao.html">Formação</a></li>
+      <li><a href="portfolio.html">Portfólio</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- Botão para alternar o tema -->
+  <button id="theme-toggle">🌙 Alternar Tema</button>
+</header>
+
+<script>
+  // Seleciona o botão
+  const btnTema = document.getElementById("theme-toggle");
+
+  // Adiciona o evento de clique
+  btnTema.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+  });
+</script>
+</body>
+<footer>
+  <p>&copy; 2026 Marcelo</p>
+</footer>
+<html>

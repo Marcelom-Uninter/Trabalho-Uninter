@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <title>Contato - Marcelo Marcos</title>
+   <link rel="stylesheet" href="style.css">
+   <!-- Botão para alternar o tema -->
+  <button id="theme-toggle">🌙 Alternar Tema</button>
+  <!-- Menu fixo -->
+  <header> ... Bem vindo ao Currículo de Marcelo Marcos ... </header>
+
+<nav>
+    <ul>
+      <li><a href="sobremim.html">Sobre Mim</a></li>
+      <li><a href="formacao.html">Formação</a></li>
+      <li><a href="portfolio.html">Portfólio</a></li>
+      <li><a href="contato.html"class ="active">Contato</a></li>
+    </ul>
+  </nav>
+</head>
+<body>
+  
+  <main>
+    <h2>Contato</h2>
+<!-- Formulário com validação em JavaScript -->
+    <form id="formContato">
+        <input type="text" id="nome" placeholder="Seu nome" required>
+        <input type="email" id="email" placeholder="Seu email" required>
+        <textarea id="mensagem" placeholder="Sua mensegem" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+  <main>
+
+  <footer>
+    <!--- Botão para voltar ao início --->
+   <button onclick="voltarInicio()" id="btnInicio">🏠 Voltar ao Início</button>
+   <script>
+      function voltarInicio() {
+         window.location.href = "inicio.html" // ajusta para a página inicial
+      }
+   </script>
+
+   <style>
+      #btnInicio {
+         position: fixed;
+         bottom: 20px;
+         right: 20px;
+         background-color: #28a745;
+         color: white;
+         border: none;
+         padding: 10px 15px;
+         border-radius: 5px;
+         cursor: pointer;
+         font-size: 14px;
+      }
+      #btnInicio:hover {
+         background-color: #1e7e34;
+      }
+   </style>
+
+<script>
+  // Seleciona o botão
+  const btnTema = document.getElementById("theme-toggle");
+
+  // Adiciona o evento de clique
+  btnTema.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+  });
+
+</script>
+    <p>&copy; 2026 Marcelo</p>
+  </footer>
+
+<!-- Script de validação -->
+ <script src="script.js"></script>
+<body>
+<html>
